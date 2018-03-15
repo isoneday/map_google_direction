@@ -19,16 +19,14 @@
         android:textColor="@android:color/white"
         android:layout_height="wrap_content"
         android:onClick="@{click::onClickMap}"
-
         android:text="@string/map" />
-
     <Button
         android:background="@drawable/background"
         android:textColor="@android:color/white"
+        android:onClick="@{click::onPlacepicker}"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onPlacePicker"
         android:text="@string/place_picker" />
 
     <Button
@@ -37,7 +35,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onListMAp"
+        android:onClick="@{click::onListMap}"
         android:text="@string/list_map" />
 
 </LinearLayout>

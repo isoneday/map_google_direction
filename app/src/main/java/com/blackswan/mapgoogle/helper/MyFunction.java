@@ -1,5 +1,6 @@
 package com.blackswan.mapgoogle.helper;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 
 public class MyFunction extends AppCompatActivity {
     Animation animation;
-    Context c;
+  public Context c;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

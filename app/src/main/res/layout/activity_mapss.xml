@@ -3,6 +3,7 @@
     <data>
         <variable name="handlers" type="com.blackswan.mapgoogle.MapsActivity.EventHandler"/>
         </data>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -35,6 +36,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
                 android:textColorHint="@color/colorPrimaryDark"
+                android:onClick="@{handlers::onClickawal}"
 
                 android:layout_height="wrap_content"
                 android:drawableLeft="@android:drawable/ic_menu_myplaces"
@@ -42,6 +44,8 @@
 
             <EditText
                 android:id="@+id/edtakhir"
+                android:onClick="@{handlers::onClickakhir}"
+
                 android:layout_width="match_parent"
                 android:textColor="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimaryDark"
@@ -112,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:onClick="@{handlers::onClickFriend}"
+                android:onClick="@{handlers::onClicklokasi}"
                 android:textColor="@color/colorPrimaryDark"
                 android:background="@color/hitam"
                 android:text="lokasiku" />
@@ -122,6 +126,7 @@
                 android:id="@+id/btnpanorama"
                 android:layout_width="match_parent"
                 android:textColor="@color/colorPrimaryDark"
+                android:onClick="@{handlers::onClickPanorama}"
 
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
